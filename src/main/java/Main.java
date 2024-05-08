@@ -19,8 +19,7 @@ class Main {
 
     while (programDziala) {
       System.out.println("Wybierz opcję:");
-      System.out.println("1. Wyświetl zapisane dane studentów");
-      System.out.println("2. Dodaj nowego studenta");
+      System.out.println("1. Dodaj nowego studenta");
       System.out.println("0. Wyjdź z programu");
 
       int wybor = scanner.nextInt();
@@ -28,12 +27,6 @@ class Main {
       try {
         switch (wybor) {
           case 1:
-            System.out.println("Zapisane dane studentów:");
-            for (Student student : s.getStudents()) {
-              System.out.println(student.ToString());
-            }
-            break;
-          case 2:
             System.out.println("Podaj imię nowego studenta:");
             String imie = scanner.next();
             System.out.println("Podaj wiek nowego studenta:");
